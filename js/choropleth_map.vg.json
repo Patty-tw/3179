@@ -13,7 +13,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/Energy%20supply%20per%20capita.csv"
+          "url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/Energy%20supply%20per%20capita.csv"
         },
         "key": "Country and area",
         "fields": ["2017"]
