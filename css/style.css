@@ -1,8 +1,7 @@
-#choropleth_map {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
+.sub-title {display: inline-block;
+    margin-right: 1em;
+    font-weight: 700;
+    color: #222;
+    font-family: Tahoma, sans-serif;
+    font-style: normal;
+    margin-top: 1.5em;}
