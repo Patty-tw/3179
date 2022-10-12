@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/energy_pro_con_long.csv"},
+    "width": 400,
+    "height": 300,
+    "encoding": {"x": {"field": "Year", "type": "temporal"}},
+    "layer": [
+      {
+        "encoding": {
+          "color": {"field": "Energy Type", "type": "nominal"},
+          "y": {"field": "Energy Consumption", "type": "quantitative"}
+        },
+        "layer": [
+          {"mark": "line"},
+          {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+        ]
+      },
+      {
+        "transform": [{"pivot": "Energy Type", "value": "Energy Consumption", "groupby": ["Year"]}],
+        "mark": "rule",
+        "encoding": {
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "Other renewables", "type": "quantitative"},
+            {"field": "Biofuels", "type": "quantitative"},
+            {"field": "Solar", "type": "quantitative"},
+            {"field": "Wind", "type": "quantitative"},
+            {"field": "Hydropower", "type": "quantitative"},
+            {"field": "Nuclear", "type": "quantitative"},
+            {"field": "Natural gas", "type": "quantitative"}
+          ]
+        },
+        "params": [{
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }]
+      }
+    ]
+  }
+  
