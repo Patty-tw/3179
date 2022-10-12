@@ -2,21 +2,61 @@
 <html lang="en".
 
 <head>
+    <!--century-gothic-->
+    <link href="http://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <!--bienetresocial-->
+    <link href="http://fonts.cdnfonts.com/css/bienetresocial" rel="stylesheet">        
+    <!--Spectral-->
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
+    <!--Aurulent Sans -->
+    <link href="http://fonts.cdnfonts.com/css/aurulent-sans" rel="stylesheet">
+
+    <!-- Typefaces-->
+    <link rel="stylesheet" href="style.css">
+        
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Responsible Production and Consumption</title>
-    
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
     <script src="vega_lite_vis.js"></script>
 
-    
+    <title>Responsible Production and Consumption</title>
 
 </head>
+    
 
-<body>	
-	<header>
-		<h1> class = "page-title"> Responsible Production and Consumption </h1>
-	</header>	
-</body>
+<body>
+    <header>
+        <h1 class="page-title"> Responsible Production and Consumption</h1>
+    </header>
+
+    <h2 class="collection-title"> Introduction</h2>
+    <p>
+        Due to population and economic growth, the amount of production and consumption has increased. Natural resources, which are taken from the environment and frequently processed or manufactured to create the goods and services that we produce and use, are necessary for both consumption and production. The extraction of global resources is estimated to increase 110% by 2060, if the economic growth continues (One planet handle with care, n.d.). Apart from depleting natural resources through the usage of material inputs, unsustainable production and consumption practices also have environmental impacts, including climate change, biodiversity loss, and pollution.
+    </p>
+    <hr>
+
+    <body>
+        <h2>Global primary energy consumption by source</h2>
+        <p id="line_chart"></p>
+    
+        <hr>
+        <h2> Microplastic and Macroplastic on the surface ocean</h2>
+        
+
+        <div class="row">
+            <div  style="width:50%" class="column">
+                <p id = "macroplastic"></p>
+            </div>
+            <div  style="width:50%" class="column">
+                <p id = "microplastic"></p>
+            </div>
+        </div>
+
+        <hr>
+        <h2>Sustainable Development Index and CO2 Emissions Tonnes per person by country (1990-2018)</h2>
+        <p id="bubble_chart"></p>
+    </body>
+
