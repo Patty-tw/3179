@@ -5,7 +5,7 @@
   "data": {
       "url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/co2_sdi_continent_4yrs.json"
   },
-  "background": "#FBF7EB",
+  
   "width": 800,
   "height": 450,
   "layer": [
