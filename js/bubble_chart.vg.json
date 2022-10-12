@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": ["","Sustainable Development Index and Co2 Emissions Tonnes per person by country (1990-2018)",""],
   "description": "An interactive scatter plot of global health statistics by country and year.",
   "data": {
       "url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/co2_sdi_continent_4yrs.json"
