@@ -1,18 +1,28 @@
-#page-title {
+html {
+    height: 100%;
+}
+
+
+.page-title {
     font-size: 40px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0.75em;
-    font-family: Lyon-Text, Georgia, ui-serif, serif;
+    font-family: Lyon-Text, Georgia, ui-serif, serif;}
 
-
-.sub-title {display: inline-block;
+.collection-title {
+    display: inline-block;
     margin-right: 1em;
     font-weight: 700;
     color: #222;
     font-family: Tahoma, sans-serif;
     font-style: normal;
-    margin-top: 1.5em;}
+    margin-top: 1.5em;
+}
+
+.column {
+    padding: 0 1em;
+}
 
 h1 {
     font-size: 1.875rem;
