@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/energy_pro_con_long.csv*"},
+    "data": {"url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/energy_pro_con_long.csv"},
     "width": 400,
     "height": 300,
     "encoding": {"x": {"field": "Year", "type": "temporal"}},
