@@ -1,0 +1,306 @@
+[
+ {
+   "FIELD1": 1,
+   "Entity": "Additives",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 25000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 2,
+   "Entity": "All industrial sectors",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 407000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 3,
+   "Entity": "Building and Construction",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 65000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 4,
+   "Entity": "Consumer & Institutional Products",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 42000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 5,
+   "Entity": "Electrical/Electronic",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 18000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 6,
+   "Entity": "HDPE",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 52000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 7,
+   "Entity": "Industrial Machinery",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 3000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 8,
+   "Entity": "LD, LDPE",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 64000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 9,
+   "Entity": "Other polymer type",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 16000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 10,
+   "Entity": "Other sectors",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 47000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 11,
+   "Entity": "PET",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 33000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 12,
+   "Entity": "PP",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 68000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 13,
+   "Entity": "PP&A fibers",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 59000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 14,
+   "Entity": "PS",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 25000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 15,
+   "Entity": "PUT",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 27000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 16,
+   "Entity": "PVC",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 38000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 17,
+   "Entity": "Packaging",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 146000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 18,
+   "Entity": "Textiles",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 59000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 19,
+   "Entity": "Transportation",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 27000000,
+   "type": "production"
+ },
+ {
+   "FIELD1": 20,
+   "Entity": "Additives",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 17000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 21,
+   "Entity": "All industrial sectors",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 302000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 22,
+   "Entity": "Building and Construction",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 13000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 23,
+   "Entity": "Consumer & Institutional Products",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 37000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 24,
+   "Entity": "Electrical/Electronic",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 13000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 25,
+   "Entity": "HDPE",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 40000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 26,
+   "Entity": "Industrial Machinery",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 1000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 27,
+   "Entity": "LD, LDPE",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 57000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 28,
+   "Entity": "Other polymer type",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 11000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 29,
+   "Entity": "Other sectors",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 38000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 30,
+   "Entity": "PET",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 32000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 31,
+   "Entity": "PP",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 55000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 32,
+   "Entity": "PP&A fibers",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 42000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 33,
+   "Entity": "PS",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 17000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 34,
+   "Entity": "PUT",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 16000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 35,
+   "Entity": "PVC",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 15000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 36,
+   "Entity": "Packaging",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 141000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 37,
+   "Entity": "Textiles",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 42000000,
+   "type": "waste"
+ },
+ {
+   "FIELD1": 38,
+   "Entity": "Transportation",
+   "Code": "NA",
+   "Year": 2015,
+   "million_tonnes": 17000000,
+   "type": "waste"
+ }
+]
