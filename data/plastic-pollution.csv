@@ -32,7 +32,7 @@ Costa Rica,CRI,2019,0.089144216
 Cote d'Ivoire,CIV,2019,0.186024808
 Croatia,HRV,2019,0.054237288
 Cyprus,CYP,2019,0.002502085
-Democratic Republic of Congo,COD,2019,0.004839211
+Dem. Rep. Congo,COD,2019,0.004839211
 Denmark,DNK,2019,0.001559252
 Djibouti,DJI,2019,0.004106776
 Dominica,DMA,2019,0.736111111
@@ -164,3 +164,10 @@ Western Sahara,ESH,2019,0.065292096
 World,OWID_WRL,2019,0.126980239
 Yemen,YEM,2019,0.008641383
 Zimbabwe,ZWE,2019,0
+South Sudan,,2019,Null
+Greenlans,,2019,Null
+Mali,,2019,Null
+Bolivia ,,2019,Null
+Paraguay,,2019,Null
+Botswana,,2019,Null
+Zambia,,2019,Null
