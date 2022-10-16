@@ -1,0 +1,114 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": ["","Plastic waste emitted into ocean per capita",""],
+    "width": 990,
+    "height": 400,
+    "data": {
+        "url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/plastic-pollution.csv"
+    },
+    "layer": [
+
+        {
+            "transform": [{
+                    "lookup": "Entity",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+                            "format": {
+                                "type": "topojson",
+                                "feature": "ne_110m_admin_0_countries"
+                            }
+                        },
+                        "key": "properties.NAME"
+                    },
+                    "as": "geo"
+                },
+                 { "calculate": "'Data is not available in ' + datum.Entity", "as": "note" }
+            ]
+
+            ,
+            "mark": { "type": "geoshape", "fill": "lightgray", "stroke": "white" },
+            "encoding": {
+                "tooltip": {
+                    "field": "note"
+                },
+
+                "shape": {
+                    "field": "geo",
+                    "type": "geojson"
+                }
+
+            }
+        },
+        {
+            "transform": [{
+                    "lookup": "Entity",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+                            "format": {
+                                "type": "topojson",
+                                "feature": "ne_110m_admin_0_countries"
+                            }
+                        },
+                        "key": "properties.NAME_LONG"
+                    },
+                    "as": "geo"
+                }
+            ],
+            "projection": {
+                "type": "equalEarth"
+            },
+            "mark": {
+                "type": "geoshape",
+                "stroke": "white"
+            },
+            "encoding": {
+                "shape": {
+                    "field": "geo",
+                    "type": "geojson"
+                },
+                "color": {
+                    "field": "Mismanaged plastic waste to ocean per capita (kg per year)",
+                    "type": "quantitative",
+                    "title": "Mismanaged plastic waste to ocean per capita (kg per year)",
+                    "scale": {"scheme": "Oranges", "domainMid":0.1},
+                    "legend": {"orient": "bottom", "gradientLength":300, "titleLimit": 450}
+                },
+                "tooltip": [{
+                        "field": "Entity",
+                        "type": "nominal",
+                        "title": "Country"
+                    },
+                    {
+                        "title": "Mismanaged plastic waste to ocean per capita (kg per year)",
+                        "field": "Mismanaged plastic waste to ocean per capita (kg per year)",
+                        "type": "quantitative"
+                    }
+                ]
+            }
+        }
+
+    ],
+    "config": {
+        
+        "axis": {
+            "labelFontSize": 15,
+            "titleFontSize": 15
+        },
+        "legend": {
+            "labelFontSize": 15,
+            "titleFontSize": 15,
+            "orient": "none",
+            "legendY": 100,
+            "legendX": 940,
+            "titleAnchor": "start"
+        },
+        "title": {
+            "anchor": "middle",
+            "fontSize": 19,
+            "font": "Segoe UI",
+            "fontWeight": 600
+        }
+    }
+}

@@ -1,0 +1,148 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A population pyramid for the US in 2000.",
+    
+    "data": {
+        "url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/waste_pro.csv"
+    },
+
+    "transform": [{"filter":{"field": "Entity", "oneOf": ["Packaging", "Building and Construction", "Textiles", "Other sectors", "Consumer & Institutional Products"]}},
+        {
+            "calculate": "datum.type == 'production' ? 'production' : 'waste'",
+            "as": "type"
+        }
+    ],
+    "title":"\n",
+    "spacing": 5,
+    "hconcat": [{
+            "transform": [{
+                "filter": {
+                    "field": "type",
+                    "equal": "production"
+                }
+            }],
+            "title": ["Plastic production",""],
+            "width": 200,
+            "height": 255,
+            "mark": "bar",
+            "encoding": {
+                "y": {
+                    "field": "Entity",
+                    "axis": null,
+                    "type": "nominal"
+                },
+                "x": {
+                    "field": "million_tonnes",
+                    "type": "quantitative",
+                    "title": "Tonnes",
+                    "axis": {
+                        "format": "s"
+                    },
+                    "sort": "descending"
+                },
+                "tooltip": [{
+                        "field": "Entity",
+                        "type": "nominal",
+                        "title": "Entity"
+                    },
+                    {
+                        "field": "million_tonnes",
+                        "type": "quantitative",
+                        "title": "Import (% of GDP)"
+                    }
+                ],
+                "color": {
+                    "field": "type",
+                    "scale": {
+                        "range": [
+                            "#675193",
+                            "#ca8861"
+                        ]
+                    },
+                    "legend": null
+                }
+            }
+        },
+        {
+            "width": 10,
+            "height": 255,
+            "view": {
+                "stroke": null
+            },
+            "mark": {
+                "type": "text",
+                "align": "center"
+            },
+            "encoding": {
+                "y": {
+                    "field": "Entity",
+                    "type": "nominal",
+                    "axis": null
+                },
+                "text": {
+                    "field": "Entity",
+                    "type": "nominal"
+                }
+            }
+        },
+        {
+            "transform": [{
+                "filter": {
+                    "field": "type",
+                    "equal": "waste"
+                }
+            }],
+            "title": ["Waste generation",""],
+            "width": 200,
+            "height": 255,
+            "mark": "bar",
+            "encoding": {
+                "y": {
+                    "field": "Entity",
+                    "title": null,
+                    "axis": null
+                    
+                },
+                "x": {
+                    "field": "million_tonnes",
+                    "type": "quantitative",
+                    "title": "Tonnes",
+                    "axis": {
+                        "format": "s"
+                    }
+                },
+                "tooltip": [{
+                        "field": "Entity",
+                        "type": "nominal",
+                        "title": "Entity"
+                    },
+                    {
+                        "field": "million_tonnes",
+                        "type": "quantitative",
+                        "title": "Export (% of GDP)"
+                    }
+                ],
+                "color": {
+                    "field": "type",
+                    "legend": null
+                }
+            }
+        }
+    ],
+    "config": {
+        "view": {
+            "stroke": null
+        },
+        "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 10,
+            "grid": false
+        },
+        "title": {
+            "anchor": "middle",
+            "fontSize": 16,
+            "font": "Segoe UI",
+            "fontWeight": 600
+        }
+    }
+}

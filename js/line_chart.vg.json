@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Two vertically concatenated charts that show a histogram of precipitation in Seattle and the relationship between min and max temperature.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/plastic_surface.csv"
+  },
+  "hconcat": [
+    { "width":"container",
+      "title": "Microplastics",
+      "encoding": {"x": {"field": "Year", "type": "temporal"}},
+      "layer": [
+    {
+      "encoding": {
+        "color": {"field": "Entity", "type": "nominal", "legend":{"orient": "bottom"}},
+        "y": {"field": "Microplastic", "type": "quantitative"},
+        "strokeDash": {"field": "Predicted", "type": "nominal", "legend": {"orient": "bottom"}}
+      },
+      "layer": [
+        {"mark": "line"},
+        {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+      ]
+    },
+    {
+      "transform": [{"pivot": "Entity", "value": "Microplastic", "groupby": ["Year"]}],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Year", "type": "temporal"},
+          {"field": "Emissions growth to 2050", "type": "quantitative"},
+          {"field": "Emissions level to 2020", "type": "quantitative"},
+          {"field": "Emissions stop in 2020", "type": "quantitative"}
+        ]
+      },
+      "params": [{
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Year"],
+          "nearest": true,
+          "on": "mouseover",
+          "clear": "mouseout"
+        }
+      }]
+    }
+  ]
+    },
+    { "width":"container",
+      "title":"Macroplastics",
+      "encoding": {"x": {"field": "Year", "type": "temporal"}},
+    "layer": [
+      {
+        "encoding": {
+          "color": {"field": "Entity", "type": "nominal"},
+          "y": {"field": "Macroplastic", "type": "quantitative"},
+          "strokeDash": {"field": "Predicted", "type": "nominal"}
+        },
+        "layer": [
+          {"mark": "line"},
+          {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+        ]
+      },
+      {
+        "transform": [{"pivot": "Entity", "value": "Macroplastic", "groupby": ["Year"]}],
+        "mark": "rule",
+        "encoding": {
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "Year", "type": "temporal"},
+            {"field": "Emissions growth to 2050", "type": "quantitative"},
+            {"field": "Emissions level to 2020", "type": "quantitative"},
+            {"field": "Emissions stop in 2020", "type": "quantitative"}
+          ]
+        },
+        "params": [{
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }]
+      }
+    ]
+    }
+  ],
+  "config": {"title": {
+    "anchor": "middle",
+    "fontSize": 16,
+    "font": "Segoe UI",
+    "fontWeight": 600
+}}
+}
