@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": ["","Plastic waste emitted into ocean per capita",""],
+    "title": ["","Plastic waste emitted into ocean per capita in 2019",""],
     "width": 990,
     "height": 400,
     "data": {
