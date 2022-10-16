@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A population pyramid for the US in 2000.",
+    "description": "Plastic production and waste generation by sectors in 2015",
     
     "data": {
         "url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/waste_pro.csv"
@@ -29,6 +29,7 @@
                 "y": {
                     "field": "Entity",
                     "axis": null,
+                    "sort":"x",
                     "type": "nominal"
                 },
                 "x": {
@@ -43,12 +44,12 @@
                 "tooltip": [{
                         "field": "Entity",
                         "type": "nominal",
-                        "title": "Entity"
+                        "title": "Sector"
                     },
                     {
                         "field": "million_tonnes",
                         "type": "quantitative",
-                        "title": "Import (% of GDP)"
+                        "title": "Plastic production (tonnes)"
                     }
                 ],
                 "color": {
@@ -56,7 +57,7 @@
                     "scale": {
                         "range": [
                             "#396EB0",
-                            "#FC997C"
+                            "#B73E3E"
                         ]
                     },
                     "legend": null
@@ -100,6 +101,7 @@
                 "y": {
                     "field": "Entity",
                     "title": null,
+                    "sort":"x",
                     "axis": null
                     
                 },
@@ -114,12 +116,12 @@
                 "tooltip": [{
                         "field": "Entity",
                         "type": "nominal",
-                        "title": "Entity"
+                        "title": "Sector"
                     },
                     {
                         "field": "million_tonnes",
                         "type": "quantitative",
-                        "title": "Export (% of GDP)"
+                        "title": "Waste generation (tonnes)"
                     }
                 ],
                 "color": {
