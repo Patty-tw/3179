@@ -12,7 +12,7 @@
     {
       "encoding": {
         "color": {"field": "Entity", "type": "nominal", "legend":{"orient": "bottom"}},
-        "y": {"field": "Microplastic", "type": "quantitative"},
+        "y": {"field": "Microplastic", "type": "quantitative", "title": "Tonnes"},
         "strokeDash": {"field": "Predicted", "type": "nominal", "legend": {"orient": "bottom"}}
       },
       "layer": [
@@ -54,8 +54,8 @@
     "layer": [
       {
         "encoding": {
-          "color": {"field": "Entity", "type": "nominal"},
-          "y": {"field": "Macroplastic", "type": "quantitative"},
+          "color": {"field": "Entity", "type": "nominal", "scale":{"range":["#15133C", "#73777B", "#EC994B"]}},
+          "y": {"field": "Macroplastic", "type": "quantitative", "title": "Tonnes"},
           "strokeDash": {"field": "Predicted", "type": "nominal"}
         },
         "layer": [
@@ -97,5 +97,6 @@
     "fontSize": 16,
     "font": "Segoe UI",
     "fontWeight": 600
-}}
+},
+"background":"#F5EFE6"}
 }

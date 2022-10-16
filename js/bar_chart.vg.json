@@ -55,8 +55,8 @@
                     "field": "type",
                     "scale": {
                         "range": [
-                            "#675193",
-                            "#ca8861"
+                            "#396EB0",
+                            "#FC997C"
                         ]
                     },
                     "legend": null
@@ -143,6 +143,7 @@
             "fontSize": 16,
             "font": "Segoe UI",
             "fontWeight": 600
-        }
-    }
+        },
+        "background":"#F5EFE6"
+    } 
 }

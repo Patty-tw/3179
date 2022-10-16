@@ -109,6 +109,7 @@
             "fontSize": 19,
             "font": "Segoe UI",
             "fontWeight": 600
-        }
+        },
+        "background":"#F5EFE6"
     }
 }
