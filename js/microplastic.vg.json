@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/Patty-tw/FIT3179/main/data/micro_pred.csv"},
+  "width": "container",
+  "height": 300,
+  "title":{
+    "text": "Microplastics", 
+    "subtitle": "Microplastics are plastics materials with diameter less than 0.5 cm", 
+    "anchor": "start",
+    "subtitleFontSize": 15,
+    "fontSize":20},
+  "encoding": {"x": {"field": "Year", "type": "temporal"}},
+  "layer": [
+    
+
+    {
+      "encoding": {
+        "color": {"field": "Entity", 
+        "legend": {"orient": "bottom"},
+        "type": "nominal", 
+        "scale":{"range":["#15133C", "#73777B", "#EC994B"]}},
+        "y": {"field": "Acc_ocean_plastic", "type": "quantitative", "title": "Tonnes"},
+        "strokeDash": {"field": "predicted", "type": "nominal", "legend":null}
+      },
+      "layer": [
+        {"mark": "line"},
+        {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+      ]
+    },
+    {
+      "transform": [{"pivot": "Entity", "value": "Acc_ocean_plastic", "groupby": ["Year"]}],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Emissions growth to 2050", "type": "quantitative"},
+          {"field": "Emissions level to 2020", "type": "quantitative"},
+          {"field": "Emissions stop in 2020", "type": "quantitative"}
+        ]
+      },
+      "params": [{
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Year"],
+          "nearest": true,
+          "on": "mouseover",
+          "clear": "mouseout"
+        }
+      }]
+    }
+  ],
+  "config": {"title": {
+    "anchor": "middle",
+    "fontSize": 16,
+    "font": "Segoe UI",
+    "fontWeight": 600
+},
+"background":"#F5EFE6"}
+}
