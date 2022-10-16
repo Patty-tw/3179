@@ -88,3 +88,9 @@ h3 {
 .small-font {
     font-size: 14px;
 }
+
+.bodytext {
+    font-family: 'Century Gothic', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
