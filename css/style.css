@@ -8,8 +8,6 @@ h1 {
 
 body {
     background-color: #F5EFE6;
-
-  
 }
 
 .page{
@@ -30,6 +28,7 @@ h1 {
 
 .description-right {
     padding-left: 20px;
+    align-items: center;
 }
 
 .description-left {
@@ -95,3 +94,19 @@ h3 {
     text-justify: inter-word;
 }
 
+.credit {
+    display: flex;
+    justify-content: left;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 16px;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0;
+    white-space: pre-wrap;
+    font-weight: 500;
+    font-style: normal;
+}
