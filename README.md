@@ -2,7 +2,7 @@
 
 
 # Data
-Fetched from [Our World in Data](https://ourworldindata.org/plastic-pollution): 
+Fetched data from [Our World in Data](https://ourworldindata.org/plastic-pollution): 
 -  Plastic waste emitted to the ocean per capita, 2019
 -  Primary plastic production by industrial sector, 2015
 -  Plastic waste generation by industrial sector, 2015
