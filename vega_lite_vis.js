@@ -1,4 +1,4 @@
-var vg_1 = "js/improve_map.vg.json"
+var vg_1 = "js/map.vg.json"
 var vg_2 = "js/bar_chart.vg.json"
 var vg_3 = "js/macroplastic.vg.json"
 var vg_4 = "js/microplastic.vg.json"
