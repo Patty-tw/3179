@@ -19,4 +19,7 @@ Fetched data from [Our World in Data](https://ourworldindata.org/plastic-polluti
 - index.html: Structure of the webpage 
 - style.css: Styling of the webpage 
 
+# Dependencies 
+- [Vega] (https://vega.github.io/)
+- [Vega lite] (https://vega.github.io/vega-lite/) 
 https://patty-tw.github.io/FIT3179/ 
